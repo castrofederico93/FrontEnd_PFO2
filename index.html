@@ -6,9 +6,17 @@
     <title>Mi Portafolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="switch-container">
+            <span id="modo-label" class="switch-label">Modo claro 🌞</span>
+            <label class="switch">
+              <input type="checkbox" id="modo-toggle">
+              <span class="slider"></span>
+            </label>
+        </div>
         <img src="img/Logo.png" alt="Logo">
         <h1>Federico Castro</h1>
     </header>
@@ -39,7 +47,9 @@
         <section id="tarjetas">
             <h2>Películas favoritas</h2>
             <div class="contenedor-tarjetas">
-                <div class="tarjeta">
+                <!-- OCULTAMOS TODAS LAS TARJETAS QUE ESTABAN HECHAS EN HTML -->
+
+                <!-- <div class="tarjeta">
                     <img src="img/interstellar.jpg" alt="Película Interstellar">
                     <h3>Interstellar</h3>
                     <p>Un grupo de astronautas viaja a otro universo buscando un nuevo hogar para la humanidad.</p>
@@ -53,11 +63,15 @@
                     <img src="img/el-patriota.jpg" alt="Película El Patriota">
                     <h3>El patriota</h3>
                     <p>Un granjero se une a la revolución americana tras perder a su hijo en la guerra contra los británicos.</p>
-                </div>
+                </div> -->
             </div>
         </section>
 
         <!-- En esta sección puse las habilidades que conozco aunque no a la perfección y las que quiero aprender, posiblemente mas adelante agregue más. -->
+        <button id="toggle-habilidades" class="boton-toggle">
+            Ocultar habilidades
+        </button>
+
         <section id="habilidades">
             <h2>Mis Habilidades</h2>
             <h3>Habilidades actuales</h3>
@@ -84,10 +98,10 @@
         <section id="contacto">
             <h2>Contacto</h2>
             <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="text" placeholder="Apellido" required>
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Teléfono" pattern="[0-9]{7,15}" required>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Teléfono">
                 <textarea placeholder="Tu mensaje"></textarea>
                 <button type="submit">Enviar</button>
             </form>
@@ -95,13 +109,19 @@
     </main>
 
     <footer>
-        <!-- En el footer agregué un link de contacto a mi correo electrónico y los links al linkedin y github. -->
-        <p>Contacto: <a href="mailto:castro.federico93@gmail.com">federico.castro93@gmail.com</a></p>
+        <p>
+            Contacto: 
+            <a href="mailto:federico.castro93@gmail.com" title="Enviar correo">
+              <i class="fas fa-envelope"></i>
+            </a>
+        </p>
+      
         <p>Sígueme en:</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/federico-c-16768735/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/castrofederico93" target="_blank">GitHub</a></li>
+        <ul class="social-icons">
+          <li><a href="https://www.linkedin.com/in/federico-c-16768735/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/castrofederico93" target="_blank"><i class="fab fa-github"></i></a></li>
         </ul>
-    </footer>
+      </footer>      
+    <script src="js/script.js"></script>
 </body>
 </html>

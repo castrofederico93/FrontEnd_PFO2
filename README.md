@@ -1,73 +1,45 @@
-# Proyecto de Portafolio Personal
+# PFO2 – Portafolio Interactivo
 
-Este es un portafolio personal creado como parte de la práctica formativa obligatoria 1 en HTML y CSS.
+Este proyecto es una evolución del portafolio realizado en la PFO1. El objetivo fue incorporar al menos 5 funcionalidades con JavaScript que mejoren la interacción con el usuario y, además, aplicar mejoras visuales y estructurales respecto al diseño anterior.
 
-## Checklist - Práctica Formativa Obligatoria 1
+## Funcionalidades JavaScript implementadas (Punto 1)
 
-• Estructura del Proyecto:
+1. [✓] Validación personalizada del formulario de contacto
+2. [✓] Pop-up de confirmación de envío
+3. [✓] Modo oscuro / claro con switch e ícono dinámico
+4. [✓] Mostrar / ocultar sección de habilidades con animación
+5. [✓] Creación dinámica de tarjetas de películas favoritas
+6. [✓] Contador de visitas con localStorage
 
-[✓] Archivo "index.html" ubicado en la raíz.
-[✓] Carpeta "css" que contenga el archivo "styles.css".
-[✓] (Opcional) Carpeta "img" para recursos gráficos.
-[✓] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
+## Mejoras visuales y estructurales (Punto 2)
 
-• Repositorio y Publicación:
+🔹 Mejora 1: Menú de navegación sticky
 
-[✓] Repositorio en GitHub creado.
-[✓] Proyecto subido al repositorio.
-[✓] Proyecto publicado utilizando GitHub Pages.
-[✓] En el "README.md" se indica la URL de GitHub Pages.
+El menú principal ahora permanece fijo en la parte superior de la página gracias al uso de `position: sticky`. Esto facilita la navegación sin importar en qué parte del sitio esté el usuario.
 
-• Uso de Google Fonts:
+**Antes:**
 
-[✓] Enlace a Google Fonts incluido en la sección "head" del HTML.
-[✓] La tipografía importada se aplica en el sitio.
-[✓] Redacta brevemente tu decisión: ¿Por qué elegiste esa fuente?
-Respuesta: Elegí la fuente "Poppins" desde Google Fonts porque es moderna, legible y versátil.
+![Diseño anterior](img/Nav_Antes.jpg)
 
-• HTML:
+**Después:**
 
-[✓] El documento inicia con la declaración DOCTYPE y usa el atributo lang="es".
-[✓] Se han incluido las metaetiquetas obligatorias: charset y viewport.
-[✓] Se ha definido un título descriptivo.
-[✓] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.
+![Diseño actualizado](img/Nav_Despues.jpg)
 
-Secciones obligatorias en "main":
 
-[✓] Barra de navegación ("nav") presente y contiene al menos 3 enlaces.
-[✓] Se han insertado al menos 4 comentarios explicativos en el código HTML.
+🔹 Mejora 2: Rediseño del footer con íconos
 
-• CSS:
+El pie de página fue rediseñado para mostrar íconos visuales representando los medios de contacto: Gmail, LinkedIn y GitHub. Se utilizó la biblioteca Font Awesome para estilizar y alinear mejor los enlaces. El correo electrónico ahora se representa solo con un ícono.
 
-[✓] Existe el archivo "styles.css" con estilos personalizados.
-[✓] Se utilizan selectores basados en clases e identificadores.
-[✓] La tipografía importada desde Google Fonts se aplica correctamente en todos los elementos.
+**Antes:**
 
-Layout y Organización:
+![Diseño anterior](img/Footer_Antes.jpg)
 
-[✓] Se ha organizado el layout (especialmente en la sección "tarjetas") utilizando Flexbox o Grid.
-[✓] Redacta: ¿Qué ventajas encontraste al utilizar Flexbox o Grid en tu proyecto?
-Respuesta: La facilidad para distribuir el espacio entre los elementos y alinear los contenidos de manera flexible, lo vuelve ideal para adaptarse a diferentes tamaños de pantalla.
+**Después:**
 
-Estilización de Componentes:
+![Diseño anterior](img/Footer_Despues.jpg)
 
-[✓] Se han personalizado los estilos de tablas, botones, enlaces y formularios.
-[✓] Se han ajustado las dimensiones de imágenes y contenedores utilizando unidades relativas (%,
-rem, vh).
-[✓] Se ha implementado al menos una animación o transición (por ejemplo, efecto hover en
-tarjetas o botones).
-[✓] Redacta: ¿Qué animación o transición implementaste y por qué consideraste que era
-adecuada para tu proyecto?
-Respuesta: Utilicé una animación sutil en las tarjetas, donde al pasar el mouse por encima, estas se agrandan ligeramente. Consideré que era una animación adecuada porque es simple y hace que la experiencia del usuario sea más dinámica sin sobrecargar visualmente la página.
+## ¿Cómo ver el proyecto?
 
-• Consideraciones Adicionales:
+Podés acceder al sitio publicado en GitHub Pages desde este enlace:
 
-[✓] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
-[✓] Se aplicaron buenas prácticas de accesibilidad (por ejemplo, uso adecuado de atributos alt en
-las imágenes).
-[✓] Se añadieron comentarios adicionales donde se describan decisiones de diseño o la lógica de
-implementación.
-
-## Enlace al proyecto en GitHub Pages
-
-Enlace a la web publicada: https://castrofederico93.github.io/FrontEnd/
+[Ver sitio](https://castrofederico93.github.io/FrontEnd_PFO2/)

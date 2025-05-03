@@ -38,6 +38,9 @@ h2 {
 
 /* Navegación */
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background-color: #34495e;
     padding: 1rem;
 }
@@ -193,4 +196,182 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Modo Oscuro */
+body.modo-oscuro {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.modo-oscuro header,
+body.modo-oscuro nav,
+body.modo-oscuro footer {
+    background-color: #1e1e1e;
+}
+
+body.modo-oscuro h2,
+body.modo-oscuro a,
+body.modo-oscuro .tarjeta h3 {
+    color: #9ecbff;
+}
+
+body.modo-oscuro .tarjeta {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    border: 1px solid #444;
+}
+
+body.modo-oscuro .tarjeta p {
+    color: #cccccc;
+}
+
+body.modo-oscuro .switch-label {
+    color: #fff;
+}
+
+body.modo-oscuro .switch-container {
+    background-color: #121212;
+}
+
+/* Contenedor del switch */
+.switch-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: #34495e;
+    padding: 6px 12px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.switch-label {
+    font-size: 1rem;
+    color: white;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+/* Estilo del switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Estilo del fondo */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    left: 3px;
+    bottom: 3px;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+.boton-toggle {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-toggle:hover {
+    background-color: #2c3e50;
+}
+
+/* Transición para mostrar/ocultar */
+#habilidades {
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    max-height: 1000px;
+    opacity: 1;
+}
+
+#habilidades.oculto {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    pointer-events: none;
+}
+
+.contador-visitas {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: white;
+}
+
+body.modo-oscuro .contador-visitas {
+    color: #aaaaaa;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons li a {
+    font-size: 3rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+    color: #00acee;
+}
+
+footer p i {
+    font-size: 3rem;
+    color: white;
+    margin-left: 2rem;
+    transition: color 0.3s;
+    vertical-align: middle;
+}
+
+footer p a:hover i {
+    color: #ea4335;
 }
