@@ -36,7 +36,7 @@ El pie de página fue rediseñado para mostrar íconos visuales representando lo
 
 **Después:**
 
-![Diseño anterior](img/Footer_Despues.jpg)
+![Diseño actualizado](img/Footer_Despues.jpg)
 
 ## ¿Cómo ver el proyecto?
 
